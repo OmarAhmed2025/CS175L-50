@@ -5,10 +5,10 @@
 
 # User Inputs for Stock Prices and Shares
 
-commission= float(input("Constant Commission Rate: "))
-shares=int(input("How many shares did you purchase: "))
-purchase=float(input("How much did you pay per share: "))
-selling_price=float(input("Selling Price: "))
+commission= float(input("Constant Commission Rate?: "))
+shares=int(input("How many shares did you purchase?: "))
+purchase=float(input("How much did you pay per share?: "))
+selling_price=float(input("Selling Price?: "))
 
 # Calculations for Stock Prices and Commission
 
