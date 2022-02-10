@@ -1,35 +1,43 @@
-#Omar Ahmed
-# CS175-50L
-#Resturant
-#SP 2022
+'''
+Omar Ahmed
+CS175-50L
+Resturant
+SP 2022
+'''
 
-# Initial Booleans Values
+# While Loop
+cont="yes"
 
-vegetarian=False
-vegan=False
-glutenfree=False
+while cont == "yes":
 
-#Prompting User
+    vegetarian=False
+    vegan=False
+    glutenfree=False
 
-vege= input("Is anyone in your party a vegetrian?: ")
-if vege == 'yes':
-    vegetarian= True
+    #Prompting User
 
-veg=input("Is anyone is your party vegan?: ")
-if veg == 'yes':
-    vegan = True
+    vege= input("Is anyone in your party a vegetrian?: ")
+    if vege.lower() == 'yes':
+        vegetarian= True
 
-gluten=input("Is anyone in your party gluten-free?: ")
-if gluten == 'yes':
-    glutenfree= True
+    veg=input("Is anyone is your party vegan?: ")
+    if veg.lower() == 'yes':
+        vegan = True
 
-#Output of Resturant Choices 
+    gluten=input("Is anyone in your party gluten-free?: ")
+    if gluten.lower() == 'yes':
+        glutenfree= True
 
-if vegan:
-    print('Corner Cafe \n The Chefs kitchen')
-elif glutenfree:
-    print('Main Street Pizza Company \n Corner Cafe \n The Chefs Kitchen ')
-elif vegetarian:
-    print('Main Street Pizza Company \n Corner Cafe \n The Chefs Kitchen \n Mamas Fine Italian')
-else:
-    print('Joes Gourmet Burgers \nMain Street Pizza Company \n Corner Cafe \n The Chefs Kitchen \n Mamas Fine Italian')
+    #Output of Resturant Choices 
+
+    if vegan:
+        print('Corner Cafe \n The Chefs kitchen')
+    elif glutenfree:
+        print('Main Street Pizza Company \n Corner Cafe \n The Chefs Kitchen ')
+    elif vegetarian:
+        print('Main Street Pizza Company \n Corner Cafe \n The Chefs Kitchen \n Mamas Fine Italian')
+    else:
+        print('Joes Gourmet Burgers \nMain Street Pizza Company \n Corner Cafe \n The Chefs Kitchen \n Mamas Fine Italian')
+    repeat=print("If you would like to contine type yes if not type no to end")
+    cont= input()
+print("Goodbye!")
