@@ -1,9 +1,12 @@
 '''
 Omar Ahmed
 CS-175L
-calculateaverage.py
+calculateaverage.py (Extra Cerdit) 
 Spring 2022
 '''
+#Get the random numbers
+import my_random 
+
 #Main Function with main logic for program 
 def main():
     cont = True
@@ -11,10 +14,7 @@ def main():
           n= 5
           grades=[]
           for i in range(n):
-              score = float(input(f"Enter Test Score {i+1} :  "))
-              while score < 0 or score > 100:
-                  print("Invalid Input!")
-                  score = float(input(f"Enter Test Score {i+1} :  "))
+              score = get_random_val()
               grades.append(score)
 
           each_grade=[]
@@ -56,9 +56,8 @@ def repeat():
         return True
     else:
         return False
+def get_random_val():
+    return my_random.gen_random(1,100)
     
 #Call the main function
 main()
-
-    
-
