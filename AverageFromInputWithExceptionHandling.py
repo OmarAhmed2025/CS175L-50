@@ -12,7 +12,7 @@ def main():
           else:
               cnt,tot = read_nums(number_file)
               av = average(tot,cnt)
-              print(f"The average of {cnt} nums in the file is: {av}")
+              print(f"The average of the {cnt} numbers is : {av}")
                   
 
           
