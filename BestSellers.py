@@ -1,4 +1,4 @@
-#Omar Ahmed
+#Omar Ahmed and Ava Ondecker
 #BestSellers
 #CS175L-50
 #Spring 2022
